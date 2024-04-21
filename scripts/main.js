@@ -114,21 +114,3 @@ function toggleFullscreen() {
     video.msRequestFullscreen();
   }
 }
-
-
-/* Poster Image & Youtube Video */
-document.addEventListener("DOMContentLoaded", function() {
-  // Get the poster image and YouTube iframe
-  var posterImage = document.querySelector(".poster-image");
-  var youtubeIframe = document.querySelector(".youtube-iframe");
-
-  // Add click event listener to the poster image
-  posterImage.addEventListener("click", function() {
-    // Hide the poster image
-    posterImage.style.display = "none";
-    // Display the YouTube iframe
-    youtubeIframe.style.display = "block";
-    // Set the source of the iframe to start loading the video
-    youtubeIframe.src = youtubeIframe.getAttribute("src");
-  });
-});
