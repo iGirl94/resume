@@ -7307,7 +7307,7 @@ Created using IcoMoon - icomoon.io
 .gallery .cc-portfolio-video figure video {
   position: relative;
   display: block;
-  max-width: 800px;
+  max-width: 100%;
   opacity: 1;
 }
 
