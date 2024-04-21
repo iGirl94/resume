@@ -114,15 +114,3 @@ function toggleFullscreen() {
     video.msRequestFullscreen();
   }
 }
-
-/* YouTube PopUp */
-document.getElementById("videoLink").addEventListener("click", function(event) {
-  // Prevent the default behavior of the link
-  event.preventDefault();
-
-  // Get the video URL
-  var videoUrl = document.getElementById("videoPlayer").querySelector("source").getAttribute("src");
-
-  // Open the video in a pop-up window
-  window.open(videoUrl, "Video Pop-up", "width=640,height=360");
-});
